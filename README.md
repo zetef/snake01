@@ -1,2 +1,2 @@
-# snake-game C++ + SFML
+# snake-game C++ AND SFML
 
