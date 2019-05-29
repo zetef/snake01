@@ -1,1 +1,2 @@
-# snake-game C++ sfml made tring to learn c++ oop.
+# snake-game C++ + SFML
+
