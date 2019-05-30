@@ -61,19 +61,19 @@ int main(int argc, char *argv[])
             
         
 		for(int i = 0; i < N; i++)
-		for(int j = 0; j < M; j++){
-			tile.setPosition(SIZE * i, SIZE * j);
-			app.draw(tile);
-		}
+			for(int j = 0; j < M; j++){
+				tile.setPosition(SIZE * i, SIZE * j);
+				app.draw(tile);
+			}
 		
 		if(timer > delay){
-		timer = 0;
-		s.move(dir, food);
+			timer = 0;
+			s.move(dir, food);
 		}
 		
 		for (int i = 0; i < s.len; i++) {
-		block.setPosition(s.snake[i].x * SIZE, s.snake[i].y * SIZE);
-		app.draw(block);
+			block.setPosition(s.snake[i].x * SIZE, s.snake[i].y * SIZE);
+			app.draw(block);
 		}
 		
 		apple.setPosition(SIZE * food.x, SIZE * food.y);
